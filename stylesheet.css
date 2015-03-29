@@ -1,0 +1,44 @@
+table,td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td, th {
+    padding: 5px;
+    text-align: left;
+}
+table {
+    width: 100%;
+}
+caption {
+    font-size: 45px;
+}
+.container {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    overflow: hidden';
+
+}
+button {
+    padding: 10px;
+    background-color: #e74c3c;
+    border: 2px solid #e74c3c;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#trade-window {
+    text-align: center;
+    width: 100%;
+    display: none;
+}
+input, select {
+    display: block;
+    margin: 10px auto 10px auto;
+}
+#no {
+    color: red;
+}
+#request {
+    font-weight: bold;
+}
