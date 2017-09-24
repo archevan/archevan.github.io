@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pie Chart</title>
+</head>
+<body>
+	<canvas id="myChart" width="1200" height="600"></canvas>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+	<script type="text/javascript">
+		var ctx = document.getElementById("myChart").getContext("2d");
+var myChart = new Chart(ctx, {
+    type: 'pie',
+    data: {
+        labels: ["Strongly Agree", "Somewhat Agree", "Somewhat Disagree", "Strongly Disagree"],
+       datasets: [
+   {
+    data: [19, 29, 15, 6], 
+    backgroundColor: ["#48466D", "#3D84A8", "#46CDCF", "#ABEDD8"]
+   }
+	
+  ]
+    },
+    options: {
+    		title: {
+        display: true, 
+        text: "Distribution of Student Responses"
+        }
+    }
+});
+	</script>
+</body>
+</html>
